@@ -1,5 +1,11 @@
 # Thingworx knowledge base 
 
+## Installation guides
+
+### CentOs installation
+
+https://github.com/Foxoncz/thingworx-knowhow/tree/master/installation/centos
+
 ## Extension developement
 
 ### UI Widgets
