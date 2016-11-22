@@ -1,0 +1,17 @@
+{
+   "PersistenceProviderPackageConfigs":{
+      "PostgresPersistenceProviderPackage":{
+         "ConnectionInformation":{
+            "jdbcUrl":"jdbc:postgresql://localhost:5432/thingworx",
+            "password":"twadmin",
+            "username":"twadmin"
+         }
+      }
+   },
+   "PlatformSettingsConfig":{
+      "BasicSettings":{
+         "Storage":"/ThingworxStorage",
+         "BackupStorage":"/ThingworxBackupStorage"
+      }
+   }
+}

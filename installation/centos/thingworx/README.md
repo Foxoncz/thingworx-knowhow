@@ -1,0 +1,1 @@
+# Insert installation files here and copy entire CentOs guide folder to target machine.

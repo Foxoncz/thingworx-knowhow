@@ -1,0 +1,25 @@
+[Unit]
+Description=Apache Tomcat Web Application Container
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+Restart=on-failure
+
+Environment=JAVA_HOME=/usr/java/latest
+Environment=CATALINA_PID=/usr/tomcat/temp/tomcat.pid
+Environment=CATALINA_HOME=/usr/tomcat
+Environment=CATALINA_BASE=/usr/tomcat
+Environment='CATALINA_OPTS=-Xms1024M -Xmx1536M'
+Environment='JAVA_OPTS=-Djava.awt.headless=true -Dfile.encoding=UTF-8 -Dserver -Dd64'
+Environment=THINGWORX_PLATFORM_SETTINGS=/ThingworxPlatform
+
+ExecStart=/usr/tomcat/bin/startup.sh
+ExecStop=/usr/tomcat/bin/shutdown.sh
+
+User=tomcat
+Group=tomcat
+
+[Install]
+WantedBy=multi-user.target
